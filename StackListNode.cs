@@ -15,7 +15,7 @@ namespace StackAndQueue
             this.top = null;
 
         }
-        public void Push(int d)
+        internal void Push(int d)
         {
             Node<Gtype> node = new Node<Gtype>(d);
             if (this.top == null)
@@ -25,7 +25,7 @@ namespace StackAndQueue
             this.top = node;
             Console.WriteLine($"data : {d}");
         }
-        public void Peek()
+        internal void Peek()
         {
             if (this.top == null)
             {
@@ -34,7 +34,7 @@ namespace StackAndQueue
             }
             Console.WriteLine("{0} top of Stack", this.top.Data);
         }
-        public void Pop()
+        internal void Pop()
         {
             if (this.top == null)
             {
@@ -44,7 +44,7 @@ namespace StackAndQueue
             Console.WriteLine("Values Popped is : {0}", this.top.Data);
             this.top = this.top.Next;
         }
-        public void IsEmpty()
+        internal void IsEmpty()
         {
             while (this.top != null)
             {
@@ -52,7 +52,7 @@ namespace StackAndQueue
                 Pop();
             }
         }
-        public void Show()
+        internal void Show()
         {
             Node<Gtype> temp = this.top;
             while (temp != null)
