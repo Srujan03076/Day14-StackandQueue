@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace StackandQueue
+namespace StackAndQueue
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Stack and Queue");
-
+            Console.WriteLine("Stack & Queue!");
+            StackListNode<int> stackListNode = new StackListNode<int>();
+            stackListNode.Push(70);
+            stackListNode.Push(30);
+            stackListNode.Push(56);
+            stackListNode.Show();
         }
     }
 }
